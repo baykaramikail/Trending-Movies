@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31B81F429E58E1700EA1EFA /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B81F329E58E1700EA1EFA /* NetworkConstants.swift */; };
+		B31B81F629E590DD00EA1EFA /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B81F529E590DD00EA1EFA /* MovieModel.swift */; };
 		B359550D29B743AB00F8FC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359550C29B743AB00F8FC6A /* AppDelegate.swift */; };
 		B359550F29B743AB00F8FC6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359550E29B743AB00F8FC6A /* SceneDelegate.swift */; };
 		B359551429B743AB00F8FC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B359551229B743AB00F8FC6A /* Main.storyboard */; };
 		B359551629B743AC00F8FC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B359551529B743AC00F8FC6A /* Assets.xcassets */; };
 		B359551929B743AC00F8FC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B359551729B743AC00F8FC6A /* LaunchScreen.storyboard */; };
 		B3C7269229CF1A7600BD1910 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C7269129CF1A7600BD1910 /* MainViewController.swift */; };
+		B3E79ED229E099D50023F3F3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E79ED129E099D50023F3F3 /* NetworkManager.swift */; };
+		B3FDF3D629D365DD00822936 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FDF3D529D365DD00822936 /* Observable.swift */; };
 		BCD80DCA612938008C508514 /* Pods_MVVM_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B9823A8BA78224FD829A66 /* Pods_MVVM_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AA51AA931473F09CAE9CC4B /* Pods-MVVM Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Example.release.xcconfig"; path = "Target Support Files/Pods-MVVM Example/Pods-MVVM Example.release.xcconfig"; sourceTree = "<group>"; };
 		18B9823A8BA78224FD829A66 /* Pods_MVVM_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31B81F329E58E1700EA1EFA /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		B31B81F529E590DD00EA1EFA /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		B359550929B743AB00F8FC6A /* MVVM Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B359550C29B743AB00F8FC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B359550E29B743AB00F8FC6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +33,8 @@
 		B359551829B743AC00F8FC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B359551A29B743AC00F8FC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3C7269129CF1A7600BD1910 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B3E79ED129E099D50023F3F3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B3FDF3D529D365DD00822936 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C334826A85AC68941639C2B7 /* Pods-MVVM Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Example.debug.xcconfig"; path = "Target Support Files/Pods-MVVM Example/Pods-MVVM Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +65,15 @@
 				18B9823A8BA78224FD829A66 /* Pods_MVVM_Example.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B31B81F229E570D800EA1EFA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79ED129E099D50023F3F3 /* NetworkManager.swift */,
+				B31B81F329E58E1700EA1EFA /* NetworkConstants.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		B31B822B29B74F890076AF46 /* App */ = {
@@ -94,10 +111,9 @@
 				B3EA963629C89A0D00A624EF /* ViewModel */,
 				B3EA963029C8996600A624EF /* Controllers */,
 				B3C7269029CF02BA00BD1910 /* Classes */,
+				B31B81F229E570D800EA1EFA /* Networking */,
 				B31B822B29B74F890076AF46 /* App */,
 				B359551529B743AC00F8FC6A /* Assets.xcassets */,
-				B359551229B743AB00F8FC6A /* Main.storyboard */,
-				B359551729B743AC00F8FC6A /* LaunchScreen.storyboard */,
 				B359551A29B743AC00F8FC6A /* Info.plist */,
 			);
 			path = "MVVM Example";
@@ -106,6 +122,8 @@
 		B3C7268F29CF02AE00BD1910 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B359551229B743AB00F8FC6A /* Main.storyboard */,
+				B359551729B743AC00F8FC6A /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +131,7 @@
 		B3C7269029CF02BA00BD1910 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B3FDF3D529D365DD00822936 /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -128,6 +147,7 @@
 		B3EA963529C899C200A624EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B31B81F529E590DD00EA1EFA /* MovieModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31B81F629E590DD00EA1EFA /* MovieModel.swift in Sources */,
+				B31B81F429E58E1700EA1EFA /* NetworkConstants.swift in Sources */,
+				B3FDF3D629D365DD00822936 /* Observable.swift in Sources */,
+				B3E79ED229E099D50023F3F3 /* NetworkManager.swift in Sources */,
 				B359550D29B743AB00F8FC6A /* AppDelegate.swift in Sources */,
 				B359550F29B743AB00F8FC6A /* SceneDelegate.swift in Sources */,
 				B3C7269229CF1A7600BD1910 /* MainViewController.swift in Sources */,
@@ -419,9 +443,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mikail.MVVM-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,9 +475,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mikail.MVVM-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -64,7 +64,7 @@
 
 /* Begin PBXFileReference section */
 		02F0E367AD0EFC79467D657D126B9FBD /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		07203C3A88BD95A0FFA33B970E78019D /* Pods-MVVM Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MVVM Example"; path = Pods_MVVM_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07203C3A88BD95A0FFA33B970E78019D /* Pods_MVVM_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		078AA24D353F78D34893A5E6C11D9A35 /* Pods-MVVM Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MVVM Example-frameworks.sh"; sourceTree = "<group>"; };
 		0A3EB6508561F9676FE95486B422B72D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		144328DA07A49BC7CD86E61DE655B2F5 /* Pods-MVVM Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MVVM Example.modulemap"; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
-				07203C3A88BD95A0FFA33B970E78019D /* Pods-MVVM Example */,
+				07203C3A88BD95A0FFA33B970E78019D /* Pods_MVVM_Example.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 			);
 			name = "Pods-MVVM Example";
 			productName = Pods_MVVM_Example;
-			productReference = 07203C3A88BD95A0FFA33B970E78019D /* Pods-MVVM Example */;
+			productReference = 07203C3A88BD95A0FFA33B970E78019D /* Pods_MVVM_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
