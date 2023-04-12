@@ -9,7 +9,8 @@ import Foundation
 
 class NetworkConstants{
     
-    public static let shared = NetworkConstants()
+    static let shared = NetworkConstants()
+    private init() { }
     
     public var baseUrl: String {
         get{

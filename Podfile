@@ -8,6 +8,7 @@ target 'MVVM Example' do
   # Pods for MVVM Example
   
 pod 'Alamofire'
+pod 'SDWebImage', '~> 5.0'
 
 end
 
