@@ -73,5 +73,16 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let movieID = cellDataSource[indexPath.row].id
+        guard let movie = self.viewModel.returnMovieWithGivenID(movieId: movieID) else { return }
+        
+        DispatchQueue.main.async {
+            let vc = self.storyboard?.instantiateViewController(identifier: "DetailVC") as! DetailViewController
+            vc.movie = movie
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }
+    }
 }

@@ -40,4 +40,12 @@ class MainViewModel{
         })
     }
     
+    func returnMovieWithGivenID(movieId: Int) -> Movie?{
+        guard let movie = movies?.results.first(where: { movie in
+            movie.id == movieId
+        }) else { return nil }
+        
+        return movie
+    }
+    
 }
